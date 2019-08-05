@@ -1,0 +1,515 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+$opensans: 'Open Sans', sans-serif;
+$fsize:14px;	
+$btn-bg:#2091a3;
+$site-color:#2f3650;
+$hover-color:#15284b;
+$white:#fff;
+
+.base-css{
+    margin:0;
+    padding:0;
+    }
+* {
+  @extend .base-css;
+  box-sizing: border-box; }
+
+body {
+	overflow-x: hidden;
+  @extend .base-css;
+  background-color:$white;
+  font: $fsize $opensans;
+  color: $site-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 1px;
+  line-height: 20px;
+	font-weight: 400;
+
+}
+.berk-btn{
+    
+    background-color: $btn-bg;
+    color: $white;
+    padding: 10px 20px;
+    border-radius: 6px !important;
+    border: 1px solid $btn-bg;
+    text-transform: uppercase;
+	white-space: normal;
+    text-transform: capitalize;
+    font-weight: 300;
+    letter-spacing: 1px;
+    &:hover{
+         border: 3px solid $btn-bg;
+        /*background: #d5b308;
+        color: #fff;*/
+		background-color: $white;
+		color: $btn-bg; 
+    }
+	&:focus{
+		
+	}
+    
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+  }
+  li{
+      @extend ul;
+  }
+p{
+	font: $fsize $opensans;
+    color: #545454;
+}
+
+.container-inner{
+    width: 980px;
+    margin: auto;
+}
+.learn-div{
+    background: #2091a3;
+    padding-top: 110px;
+    padding-bottom: 340px;
+    .learn-img{
+        .img-circle{
+            border: 6px solid #1d7a89;
+            padding:10px;
+            border-radius: 100%;
+            width: 150px;
+            height: 150px;
+            img{
+                width: 120px;
+            }
+        }
+    }
+    .learn-info{
+        color: $white;
+        span{
+            font-size: 14px;
+            font-weight: 600;
+
+        }
+        h2{
+            font-weight: 900;
+            font-size: 28px;line-height: 40px;
+            margin: 10px 0px 30px 0px;
+        }
+        p{
+            color: $white;
+            font-size: 16px;
+        }
+        ul{
+            &.point-list{
+                margin: 50px 0px 0px;
+                li{
+                    display: inline-block;
+                    padding: 0px 10px;
+
+                    &.first{
+                        padding-left: 0px;
+                        span{
+                            padding:7px 10px;
+                            background: #145e69;
+                            color: #fff;
+                            font-weight: 900;
+                            border-radius: 20px;
+                        }
+                    }
+                    &.second{
+                        color: #162a33;
+                        font-weight: 600;
+                    }
+                    &.third{
+                        color: #072734;
+                        i{
+                            font-size: 17px;    vertical-align: middle;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.example-headers-align .mat-expansion-panel-header-title,
+.example-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+mat-form-field {
+  margin-right: 12px;
+}
+.big-btn{
+    i{
+        border: 3px solid #93cfd0;
+    border-radius: 100%;
+    font-size: 20px;
+    float: right;
+    margin-top: 8px;
+    }
+    button{
+        padding: 25px 30px;
+        width: 270px;
+        text-align: left;
+        font-size: 20px;
+        font-weight: 800;
+    }
+}
+.accr-div{
+    margin-bottom: 100px;
+    .accr-main{
+        margin-top: -245px;
+    }
+    .mat-accordion .mat-expansion-panel{
+        padding: 40px 0px 40px 0px;
+    }
+    .mat-expansion-panel-header-description {
+        flex-grow: 0;
+    }
+    .mat-expansion-panel-header-title{
+        i{
+            margin-right: 15px;  color: #2091a3;opacity: 0.5;
+        }
+    } 
+    .example-headers-align .mat-expansion-panel-header-description {
+         white-space: nowrap;transition: 0.6s;
+         -moz-transition: 0.6s;
+         -webkit-transition:0.6s;
+    }
+    .mat-expansion-panel-body {
+        padding-bottom: 50px;
+    }
+    .example-headers-align{
+        .mat-expanded{
+            margin-bottom: 0;
+            margin-top: 0;
+            .mat-expansion-panel-header-description {
+               padding-right: 290px;
+               transition: 0.6s;
+               -moz-transition: 0.6s;
+               -webkit-transition:0.6s;
+          }
+          .mat-expansion-panel-header-title{
+              color: #000;
+              font-weight: 800;
+            i{
+                 color: #2091a3;
+                 opacity: 1;
+            }
+        } 
+          .accr-data{
+            .big-btn{
+                position: absolute;
+                right: 0;
+                top: -75px;
+                transition: 0.6s;
+               -moz-transition: 0.6s;
+               -webkit-transition:0.6s;
+            }
+        }
+      }
+    }
+    
+}
+.accr-data{
+    position: relative;
+    padding-right: 270px;
+    padding-left: 40px;
+    .big-btn{
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: 0.6s;
+               -moz-transition: 0.6s;
+               -webkit-transition:0.6s;
+    }
+}
+
+
+
+
+/**sidebar nav **/
+.sidebar-nav{
+    background: $white;
+}
+.main-two{
+    height: 100%;
+    align-self: stretch;
+    background: #eeeff3;
+    &.example-sidenav-content{
+        position: relative;
+        .arr-back{
+            position: absolute;
+            top: 70px;
+            left: 35px;
+            i{
+                color: $white;
+            }
+        }
+    }
+    &.example-sidenav{
+        .cross-back{
+            position: absolute;
+            top: 15px;
+            right: 10px;
+        }
+    }
+    
+}
+.main-sec{
+    height: 100%;
+    .mat-drawer.mat-drawer-side{
+        right: 0px;
+    left: 0px;
+    height: 100%;
+    bottom: 0;
+    background: #fff;
+    }
+    
+        .mat-drawer-content{
+        width: 100%;
+        
+    }
+
+}
+.resourvce-sec-title{
+    h4{
+        margin-bottom: 45px;
+        color: #000;
+        font-weight: 800;
+    }
+}
+.resource-div{
+    margin-bottom: 150px;
+}
+.resourcelist-main{
+    .article{
+        padding: 50px;
+        .mat-card-title{
+            span{
+                font-size: 12px;
+                color: #878995;
+            }
+            p{
+                color: #000;
+                font-weight: 900;
+                font-size: 18px;
+                margin-bottom: 60px;
+            }
+        }
+        .desc{
+            button{
+                align-items: center;
+                &.download{
+                    background: #fff;
+                    border: 1px solid #2091a3;
+                    border-radius: 22px !important;
+                    color: #2091a3;
+                    font-weight: 600;
+                    span{
+                        color: #2091a3;
+                    }
+                }
+            }
+            span{
+                align-self: center;
+                font-size: 12px;
+                color: #878995;
+            }
+        }
+    }
+}
+.sidebar-nav{
+    .user-sec{
+        padding-bottom: 50px;
+        border-bottom:1px solid #ddd;
+        text-align: center;
+        margin-top: 25px;
+        img{
+            width: 108px;
+            margin:0 auto 20px;
+        }
+    }
+    .side-logo{
+        padding-top: 50px;
+        img{
+           width: 200px;
+        }
+        
+    }
+}
+.admin-text{
+    margin-top: 35px;
+    .text-list{
+        li{
+            padding: 25px 0px 25px 50px;
+            text-align: left;
+            a{
+                color: #2b2e41;
+                text-decoration: none;
+                i{
+                    color: #a8a9ae;
+                    margin-right: 10px;
+                    vertical-align: middle;
+                }
+            }
+            &.active{
+                a{
+                    color: #20283f;
+                    font-weight: 800;
+                    i{
+                        color: #20283f;
+                    }
+                }
+            }
+            &:hover{
+                a{
+                    color: #20283f;
+                    font-weight: 800;
+                    i{
+                        color: #20283f;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1199px) {
+    .container-inner {
+        width: 730px;
+    }
+    .big-btn button {
+        padding: 18px 30px;
+        width: 210px;
+        
+    }
+    .accr-div .example-headers-align .mat-expanded .mat-expansion-panel-header-description {
+        padding-right: 230px;
+    }
+    .accr-div .example-headers-align .mat-expanded .accr-data .big-btn {
+        top: -69px;}
+        .resourcelist-main .article {
+            padding: 35px;
+        }
+        .resourcelist-main .article .desc span {
+             margin-bottom: 10px;
+        }
+        .admin-text .text-list li {
+            padding: 25px 0px 25px 30px;
+        }
+}
+@media (max-width:960px) {
+    .admin-text .text-list li {
+        padding: 25px 0px 25px 30px;
+        text-align: left;
+    }
+    .main-two.example-sidenav-content .arr-back {
+       top: 10px;
+        left: 0px;
+    }
+    .learn-div {
+        padding: 75px 20px 75px 20px;
+    }
+    .accr-div .accr-main {
+        margin-top: 0;
+    }
+    .learn-div .learn-info {
+       
+        margin-top: 20px;
+    }
+    .accr-div {
+        margin-bottom: 70px;
+        padding: 0px 20px;
+        margin-top: 20px;
+    }
+    .big-btn button {
+        padding: 10px 10px;
+        width: 110px;
+        font-size: 16px;
+    }
+    .accr-div .example-headers-align .mat-expanded .mat-expansion-panel-header-description {
+        padding-right: 105px;
+    }
+    .accr-div .example-headers-align .mat-expanded .accr-data .big-btn {
+        top: -60px;
+    }
+    .accr-div .mat-accordion .mat-expansion-panel {
+        padding: 25px 0px 25px 0px;
+    }
+    .accr-data {
+        position: relative;
+        padding-right: 110px;
+        padding-left: 40px;
+    }
+    .resourvce-sec-title{
+        padding: 0px 20px;
+    }
+    .resource-div {
+        margin-bottom: 150px;
+        padding: 0px 20px;
+        flex-direction: row !important;
+        flex-wrap: wrap;flex-flow: wrap;
+    }
+    .article-col{
+        margin-bottom: 20px !important;
+    }
+}
+@media (max-width:599px) {
+    .learn-div .learn-info h2 {
+        font-size: 24px;
+        line-height: 40px;
+        margin: 5px 0px 15px 0px;
+    }
+    .learn-div .learn-info ul.point-list li, .learn-div .learn-info li.point-list li {
+        padding: 0px 5px;font-size: 12px;
+    }
+    .learn-div .learn-info ul.point-list li.first span, .learn-div .learn-info li.point-list li.first span {
+        padding: 5px 8px;
+        border-radius: 20px;
+        font-size: 12px;
+    }
+    .accr-main .mat-content{
+        flex-direction: column;
+    }
+    .accr-div .example-headers-align .mat-expanded .accr-data .big-btn {
+        top: -30px;
+    }
+    .big-btn button {
+        padding: 5px 7px;
+        width: 85px;
+        font-size: 12px;line-height: 28px;
+    }
+    .big-btn i {
+        font-size: 15px;    margin-top: 3px;
+    }
+    .accr-div .example-headers-align .mat-expanded .mat-expansion-panel-header-description {
+        padding-right: 80px;
+    }
+    .accr-main .mat-expansion-panel-header {
+        padding: 0 15px;
+    }
+    .mat-expansion-panel-body {
+        padding: 0 15px 16px;
+    }
+    .accr-data {
+        padding-right: 10px;
+        padding-left: 30px;
+        padding-top: 15px;
+    }
+    .accr-div .example-headers-align .mat-expanded .mat-expansion-panel-header-title {
+        margin-bottom: 10px;
+    }
+    .accr-div .example-headers-align  .mat-expansion-panel-header-title {
+        font-size: 14px;
+    }
+}
