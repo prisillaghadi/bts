@@ -1,0 +1,33 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!-- <div class="container main-sec" fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0" fxLayoutAlign="start start">
+  <div fxFlex="20%" class="main-two" >
+      <app-sidebar></app-sidebar>
+  </div>
+  <div fxFlex="80%" class="main-two">
+      <app-main-content></app-main-content>
+    
+  </div>
+  
+</div> -->
+
+<mat-drawer-container class="container main-sec example-container" autosize fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0" fxLayoutAlign="start start">
+
+  <mat-drawer #drawer fxFlex="20%" class="example-sidenav main-two" mode="side" >
+      <button type="button" class="cross-back" mat-button (click)="drawer.toggle()">
+          <i class="material-icons">
+              highlight_off
+              </i>
+        </button>
+        <app-sidebar></app-sidebar>
+    </mat-drawer>
+    <div fxFlex="100%" class="main-two example-sidenav-content">
+        <button type="button" class="arr-back" mat-button (click)="drawer.toggle()">
+            <i class="material-icons">
+                arrow_back
+                </i>
+          </button>
+        <app-main-content></app-main-content>
+      
+    </div>
+    
+  </mat-drawer-container>
