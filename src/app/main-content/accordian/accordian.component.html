@@ -1,0 +1,148 @@
+<div  class="learn-div " fxLayout="row" >
+    <div class="container-inner" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
+            <div class="learn-img" fxFlex="1 1 20%" fxFlex.md="25%" fxFlexAlign="start">
+                <div class="img-circle">
+                    <img src="assets/book.png" alt="bts-img">
+                </div>
+            </div>
+            <div class="learn-info" fxFlex="1 1 80%" fxFlex.md="75%" fxFlexAlign="start">
+                <span>Lead Self & Others</span>
+                <h2>Learn & Reflect</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                <ul class="point-list">
+                    <li class="first"><span>+ 30 Points</span></li>
+                    <li class="second">4 Activities</li>
+                    <li class="third"> <i class="material-icons">
+                            query_builder
+                            </i> 1 Hour</li>
+
+                </ul>
+            </div>
+    </div>
+    
+
+</div>
+<div  class="accr-div " fxLayout="row">
+    <div class="container-inner">
+            <div class="accr-main" fxFlex="1 1 100%" >
+                    <mat-accordion class="example-headers-align">
+                            <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+                              <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    <i class="material-icons">panorama_fish_eye</i>
+                                    01: Self-Paced Learning
+                                </mat-panel-title>
+                                <mat-panel-description>
+                                        <i class="material-icons"> query_builder </i> 10 Mins
+                                  <!-- <mat-icon>account_circle</mat-icon> -->
+                                </mat-panel-description>
+                              </mat-expansion-panel-header>
+                          
+                              <div class="accr-data">
+                                  <div class="info">
+                                      <p>Download and watch videos from HR leadership about the outcomes of this learning journey and prepare questions for the next reflection activity</p>
+
+                                  </div>
+                                  <div class="big-btn">
+                                        <button class="berk-btn" mat-flat-button >Start <i class="material-icons">arrow_right</i></button>
+                                  </div>
+
+                              </div>
+                          
+                              <!-- <mat-action-row>
+                                <button mat-button color="primary" (click)="nextStep()">Next</button>
+                              </mat-action-row> -->
+                            </mat-expansion-panel>
+                          
+                            <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
+                                    <mat-expansion-panel-header>
+                                            <mat-panel-title>
+                                                <i class="material-icons">panorama_fish_eye</i>
+                                                02: Individual Reflections
+                                            </mat-panel-title>
+                                            <mat-panel-description>
+                                                    <i class="material-icons"> query_builder </i> 10 Mins
+                                              <!-- <mat-icon>account_circle</mat-icon> -->
+                                            </mat-panel-description>
+                                          </mat-expansion-panel-header>
+                                      
+                                          <div class="accr-data">
+                                              <div class="info">
+                                                  <p>Download and watch videos from HR leadership about the outcomes of this learning journey and prepare questions for the next reflection activity</p>
+            
+                                              </div>
+                                              <div class="big-btn">
+                                                    <button class="berk-btn" mat-flat-button >Start <i class="material-icons">arrow_right</i></button>
+                                              </div>
+            
+                                          </div>
+                          
+                              <!-- <mat-action-row>
+                                <button mat-button color="warn" (click)="prevStep()">Previous</button>
+                                <button mat-button color="primary" (click)="nextStep()">Next</button>
+                              </mat-action-row> -->
+                            </mat-expansion-panel>
+                          
+                            <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle>
+                                    <mat-expansion-panel-header>
+                                            <mat-panel-title>
+                                                <i class="material-icons">panorama_fish_eye</i>
+                                                03: Alignment Conversations
+                                            </mat-panel-title>
+                                            <mat-panel-description>
+                                                    <i class="material-icons"> query_builder </i> 10 Mins
+                                              <!-- <mat-icon>account_circle</mat-icon> -->
+                                            </mat-panel-description>
+                                          </mat-expansion-panel-header>
+                                      
+                                          <div class="accr-data">
+                                              <div class="info">
+                                                  <p>Download and watch videos from HR leadership about the outcomes of this learning journey and prepare questions for the next reflection activity</p>
+            
+                                              </div>
+                                              <div class="big-btn">
+                                                    <button class="berk-btn" mat-flat-button >Start <i class="material-icons">arrow_right</i></button>
+                                              </div>
+            
+                                          </div>
+                          
+                              <!-- <mat-action-row>
+                                <button mat-button color="warn" (click)="prevStep()">Previous</button>
+                                <button mat-button color="primary" (click)="nextStep()">End</button>
+                              </mat-action-row> -->
+                            </mat-expansion-panel>
+
+                            <mat-expansion-panel [expanded]="step === 3" (opened)="setStep(3)" hideToggle>
+                                    <mat-expansion-panel-header>
+                                            <mat-panel-title>
+                                                <i class="material-icons">panorama_fish_eye</i>
+                                                04: CliftonStrength Assessment
+                                            </mat-panel-title>
+                                            <mat-panel-description>
+                                                    <i class="material-icons"> query_builder </i> 10 Mins
+                                              <!-- <mat-icon>account_circle</mat-icon> -->
+                                            </mat-panel-description>
+                                          </mat-expansion-panel-header>
+                                      
+                                          <div class="accr-data">
+                                              <div class="info">
+                                                  <p>Download and watch videos from HR leadership about the outcomes of this learning journey and prepare questions for the next reflection activity</p>
+            
+                                              </div>
+                                              <div class="big-btn">
+                                                    <button class="berk-btn" mat-flat-button >Start <i class="material-icons">arrow_right</i></button>
+                                              </div>
+            
+                                          </div>
+                          
+                              <!-- <mat-action-row>
+                                <button mat-button color="warn" (click)="prevStep()">Previous</button>
+                                <button mat-button color="primary" (click)="nextStep()">End</button>
+                              </mat-action-row> -->
+                            </mat-expansion-panel>
+                          
+                          </mat-accordion>
+            </div>
+    </div>
+</div>
+
